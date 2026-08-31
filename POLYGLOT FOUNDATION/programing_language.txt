@@ -1,0 +1,38 @@
+The CPU doesn't understand:
+
+Java
+Python
+JavaScript
+TypeScript
+Go
+C#
+
+It ultimately executes machine instructions.
+
+
+┌──────────────────────────────┐
+│        HUMAN WORLD           │
+│                              │
+│ Java / Python / Go / C# / TS │
+│                              │
+└──────────────┬───────────────┘
+               │
+               ↓
+┌──────────────────────────────┐
+│      LANGUAGE / RUNTIME      │
+│                              │
+│ Compiler / Interpreter / VM  │
+│ JIT / GC / Runtime libraries │
+│                              │
+└──────────────┬───────────────┘
+               │
+               ↓
+┌──────────────────────────────┐
+│        MACHINE WORLD         │
+│                              │
+│ CPU instructions             │
+│ Memory                       │
+│ Registers                    │
+│ Operating System             │
+│ Hardware                     │
+└──────────────────────────────┘

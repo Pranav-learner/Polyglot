@@ -225,3 +225,233 @@ Same source
      └──────────────→ ARM64 machine code
 
 This becomes particularly important when we study Go and native compilation.
+
+The Five Pipelines Side-by-Side
+
+Now put everything together.
+
+JAVA
+
+Java source
+    ↓
+Compiler
+    ↓
+Bytecode
+    ↓
+JVM
+    ↓
+JIT / Interpreter
+    ↓
+Machine code
+    ↓
+CPU
+PYTHON / CPYTHON
+
+Python source
+    ↓
+Parser
+    ↓
+Bytecode
+    ↓
+CPython VM
+    ↓
+Runtime execution
+    ↓
+CPU
+JAVASCRIPT
+
+JS source
+    ↓
+Parser
+    ↓
+Engine representation
+    ↓
+Interpreter
+    ↓
+JIT
+    ↓
+Machine code
+    ↓
+CPU
+TYPESCRIPT
+
+TS source
+    ↓
+Type checking
+    ↓
+JavaScript
+    ↓
+JS engine
+    ↓
+Interpreter / JIT
+    ↓
+Machine code
+    ↓
+CPU
+GO
+
+Go source
+    ↓
+Compiler
+    ↓
+Native machine code
+    ↓
+Executable
+    ↓
+OS
+    ↓
+CPU
+C#
+
+C# source
+    ↓
+Compiler
+    ↓
+IL
+    ↓
+CLR
+    ↓
+JIT / AOT
+    ↓
+Machine code
+    ↓
+CPU
+
+Compiler vs Interpreter Is NOT Binary
+
+This is another misconception I want you to eliminate.
+
+Beginners often learn:
+
+Compiled language
+VS
+Interpreted language
+
+as if there are two completely separate categories.
+
+Reality is much messier.
+
+A modern language implementation may use:
+
+Parsing
++
+Bytecode
++
+Interpreter
++
+JIT
++
+AOT
++
+Runtime optimization
+
+in different combinations.
+
+For example:
+
+Java
+
+can involve:
+
+bytecode
+interpreter
+JIT
+AOT-related technologies
+
+JavaScript engines can do:
+
+bytecode
+interpreter
+JIT
+deoptimization
+reoptimization
+
+C#/.NET can use:
+
+IL
+JIT
+AOT
+
+Go generally emphasizes:
+
+ahead-of-time native compilation
+
+Therefore:
+
+"Compiled vs interpreted" is often an inadequate mental model for modern languages.
+
+The better question is:
+
+What execution pipeline does this particular implementation use?
+
+ JIT vs AOT
+
+You'll encounter these constantly.
+
+AOT — Ahead of Time
+
+Compilation happens before execution.
+
+Conceptually:
+
+Source
+ ↓
+Compiler
+ ↓
+Machine Code
+ ↓
+Executable
+ ↓
+Run
+
+Go is strongly associated with this model.
+
+JIT — Just in Time
+
+Compilation/optimization happens during execution.
+
+Source
+ ↓
+Intermediate representation
+ ↓
+Runtime
+ ↓
+Observe execution
+ ↓
+Compile hot code
+ ↓
+Optimized machine code
+
+JavaScript engines, JVMs and .NET runtimes make extensive use of JIT techniques.
+
+Deoptimization
+
+Here's a fascinating concept.
+
+Suppose the JavaScript engine observes:
+
+add(10, 20)
+add(30, 40)
+add(50, 60)
+
+It may optimize around numeric addition.
+
+Later:
+
+add("hello", "world")
+
+Now the assumptions may no longer hold.
+
+The engine may need to:
+
+optimized code
+      ↓
+assumption invalid
+      ↓
+deoptimization
+      ↓
+fallback / reoptimization
+
+This is one reason dynamic-language runtime internals are so interesting.
+
+We'll revisit this in the performance phase.

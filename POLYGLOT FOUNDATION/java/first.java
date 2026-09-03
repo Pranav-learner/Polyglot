@@ -4,6 +4,18 @@ public class first {
         System.out.println(x);
     }
 }
+/*
+The JVM looks for:
+
+JVM
+ ↓
+Find Main Class
+ ↓
+Find main()
+ ↓
+Start Execution
+*/
+
 
 /* Conceptually:
 
@@ -111,3 +123,7 @@ class User {
     int age;
 }
 // Nominal class.
+
+// takin ginput
+ Scanner sc = new Scanner(System.in);
+  

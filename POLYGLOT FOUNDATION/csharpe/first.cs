@@ -6,6 +6,19 @@ namespace MyProgram {
         }
     }
 }
+/*
+The entry point is:
+
+Main()
+
+But modern C# allows:
+
+Console.WriteLine("Hello");
+
+These are called top-level statements.
+
+The compiler generates the necessary underlying structure.
+*/
 
 /*
 Conceptually:
@@ -51,3 +64,6 @@ class User
     public int Age;
 }
 // Nominal class with static types.
+
+// taking input
+string input = Console.ReadLine();

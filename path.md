@@ -117,3 +117,62 @@ PHASE 12    C# + .NET + Game Programming
 PHASE 13    Advanced Language-Specific Engineering
 PHASE 14    Cross-Language Systems Engineering
 PHASE 15    Polyglot Mastery & Capstone
+
+EITHER
+
+PHASE 0
+Programming Language Foundations
+        ↓
+PHASE 1
+Universal Programming Fundamentals
+        ↓
+PHASE 2
+Functions & Modular Programming
+        ↓
+PHASE 3
+Data Structures & Collections
+        ↓
+PHASE 4
+Object-Oriented Programming
+        ↓
+PHASE 5
+Memory, References & Resource Management
+        ↓
+PHASE 6
+Error Handling & Defensive Programming
+        ↓
+PHASE 7
+Functional Programming
+        ↓
+PHASE 8
+Generics, Type Systems & Advanced Types
+        ↓
+PHASE 9
+Concurrency & Parallelism
+        ↓
+PHASE 10
+Asynchronous Programming
+        ↓
+PHASE 11
+File Systems, I/O & Serialization
+        ↓
+PHASE 12
+Networking & APIs
+        ↓
+PHASE 13
+Databases & Data Access
+        ↓
+PHASE 14
+Testing & Debugging
+        ↓
+PHASE 15
+Performance & Profiling
+        ↓
+PHASE 16
+Security Fundamentals
+        ↓
+PHASE 17
+Architecture & Production Engineering
+        ↓
+        ↓
+SPECIALIZATION TRACKS

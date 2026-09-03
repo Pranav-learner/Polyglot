@@ -1,6 +1,16 @@
 x = 42
 print(x)
+"""
+Python executes the file.
 
+Python Runtime
+       ↓
+Read File
+       ↓
+Execute Statements
+       ↓
+Top → Bottom
+"""
 '''
 With the most common implementation, CPython, the conceptual model is roughly:
 
@@ -59,3 +69,6 @@ class User:
 
 # Runtime object with dynamic attributes.
 #Annotations assist tooling.
+
+# taking input
+name = input()

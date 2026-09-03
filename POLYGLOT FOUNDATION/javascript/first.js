@@ -1,5 +1,32 @@
 let x = 42
 console.log(x)
+/*
+JavaScript executes top-level statements.
+
+Conceptually:
+
+JavaScript Engine
+        ↓
+Execute Script
+        ↓
+Top → Bottom
+
+In a browser:
+
+Browser
+ ↓
+JavaScript Engine
+ ↓
+Execute Script
+
+In Node.js:
+
+Node.js
+ ↓
+JavaScript Engine
+ ↓
+Execute Script
+*/
 
 /*
 A modern JavaScript engine such as V8 doesn't simply read one line and execute it directly.

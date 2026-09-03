@@ -5,7 +5,26 @@ import "fmt"
 func main() {
 	x := 42
 	fmt.Println(x)
+
+	// taking input
+	fmt.Scan(&x)
 }
+
+/*
+Go starts at:
+
+func main()
+
+Conceptually:
+
+GO PROGRAM
+     ↓
+package main
+     ↓
+func main()
+     ↓
+EXECUTION
+*/
 
 /*
 Conceptually:

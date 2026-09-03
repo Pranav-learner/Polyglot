@@ -44,3 +44,9 @@ from TypeScript.
 
 Those are primarily compile-time concepts.
 */
+
+interface User {
+    name: string;
+    age: number;
+}
+// Interface can describe shape.

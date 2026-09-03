@@ -45,3 +45,9 @@ Machine code             Machine code
 
 We'll exploit this comparison heavily later.
 */
+class User
+{
+    public string Name;
+    public int Age;
+}
+// Nominal class with static types.

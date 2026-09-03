@@ -105,3 +105,9 @@ the JVM provides a common execution environment.
 
 This is an enormous engineering idea.
 */
+
+class User {
+    String name;
+    int age;
+}
+// Nominal class.

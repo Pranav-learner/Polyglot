@@ -56,3 +56,9 @@ CPU
 
 This distinction will become very important when we study Go concurrency.
 */
+
+type User struct {
+    Name string
+    Age int
+}
+// Struct with explicit field types.

@@ -51,3 +51,11 @@ A better statement is:
 
 Python is a language; CPython is a common implementation that compiles Python code to bytecode and executes it using its runtime machinery.
 '''
+
+class User:
+      def __init__(self,name,age):   # can also define the types of the arguments
+            self.name = name
+            self.age = age
+
+# Runtime object with dynamic attributes.
+#Annotations assist tooling.

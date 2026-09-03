@@ -1471,3 +1471,86 @@ Same object?
 | `==`                 | Yes                     | Yes                               | Yes         | Yes                      | Yes                |     |     |
 | `===`                | No                      | Yes                               | No          | No                       | No                 |     |     |
 | Identity operator    | References conceptually | Strict equality-related semantics | `is`        | Limited comparison rules | Reference concepts |     |     |
+
+
+THE NULL / MISSING VALUE PROBLEM
+
+Different languages have different concepts.
+
+Java
+→ null
+
+JavaScript / TypeScript
+→ null
+→ undefined
+
+Python
+→ None
+
+Go
+→ nil
+
+C#
+→ null
+
+This affects decision making.
+
+Java
+if (user != null) {
+    System.out.println(user.getName());
+}
+JavaScript
+if (user !== null && user !== undefined) {
+    console.log(user.name);
+}
+
+Later, JavaScript provides cleaner tools.
+
+For example:
+
+Optional Chaining
+
+Nullish Coalescing
+Python
+if user is not None:
+    print(user.name)
+Go
+
+Go's nil behavior depends on the type.
+
+Pointers, interfaces, maps, slices, channels, and functions can have nil values.
+
+We will study this deeply later.
+
+C#
+if (user != null)
+{
+    Console.WriteLine(user.Name);
+}
+
+Later we will study:
+
+Nullable Reference Types
+
+Nullable Value Types
+IMPORTANT
+
+Never think:
+
+NULL CHECKING
+
+is just syntax.
+
+It is connected to:
+
+Memory
+
+References
+
+Pointers
+
+Object Lifetime
+
+Type Systems
+
+Runtime Errors

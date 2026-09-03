@@ -1,0 +1,211 @@
+# ==============================================================================
+# POLYGLOT REPOSITORY .GITIGNORE
+# Comprehensive ignore rules for Java, Python, Node/TS/JS, Go, C#, Secrets & OS
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment Variables, Secrets & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.cer
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+secrets/
+secret/
+credentials.json
+client_secret*.json
+*.token
+*.auth
+
+# ------------------------------------------------------------------------------
+# 2. Operating System & Editor Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+.Trash-*
+
+# VS Code & JetBrains IDEs
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.history/
+
+# Vim / Emacs
+*.swp
+*.swo
+*.swn
+*~
+\#*\#
+.\#*
+
+# ------------------------------------------------------------------------------
+# 3. Java
+# ------------------------------------------------------------------------------
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+.gradle/
+build/
+!src/**/build/
+target/
+.classpath
+.project
+.settings/
+bin/
+
+# ------------------------------------------------------------------------------
+# 4. Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.egg-info/
+.installed.cfg
+*.egg
+.mypy_cache/
+.pyre/
+.pytype/
+.ipynb_checkpoints/
+dist/
+build/
+develop-eggs/
+eggs/
+parts/
+var/
+sdist/
+
+# ------------------------------------------------------------------------------
+# 5. JavaScript / TypeScript / Node.js
+# ------------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+.npm/
+.eslintcache
+.stylelintcache
+.turbo/
+.parcel-cache/
+.next/
+.nuxt/
+.output/
+.cache/
+
+# ------------------------------------------------------------------------------
+# 6. Go
+# ------------------------------------------------------------------------------
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# Test binary, built with `go test -c`
+*.test
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+# Dependency directories (suggested by Go team)
+vendor/
+go.work
+
+# ------------------------------------------------------------------------------
+# 7. C# / .NET
+# ------------------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.booproj
+*.svclog
+*.visualstate
+*.pdb
+*.dll
+*.exe
+
+# ------------------------------------------------------------------------------
+# 8. Temporary & Log Files
+# ------------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.cache
